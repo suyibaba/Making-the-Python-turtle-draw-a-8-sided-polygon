@@ -1,0 +1,41 @@
+from turtle import Turtle, Screen, circle
+
+
+import heroes
+
+
+h = heroes.gen()
+
+print (h)
+f = Turtle()
+
+f.shape("circle")
+f.color("green")
+# f.forward(40)
+# f.right(72)
+# f.forward(40)
+# f.right(72)
+# f.forward(40)
+# f.right(72)
+# f.forward(40)
+# f.right(72)
+# f.forward(40)
+# f.right(72)
+
+
+def drawing(sidesnumber):
+    angle = 360 / sidesnumber
+    for n in range (sidesnumber):
+        f.forward(80)
+        f.right(angle)
+        
+ for the_difference in range (4,15):
+    drawing(the_difference)
+
+
+
+
+drawing(8)
+s = Screen()
+print(f, s.exitonclick())
+
